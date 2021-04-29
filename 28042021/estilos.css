@@ -1,0 +1,55 @@
+/*Este selector es universal asi que se aplican todos los estilos en mi documento*/
+*{
+	/*color: green;
+	font-size: 25px;*/
+	background-color: grey;
+}
+body{
+	background-color: blue;
+}
+/*# es para id*/
+#parrafo1{
+	color: red;
+}
+/*. es para clases*/
+.titulo1{
+	color:orange;
+}
+/*Selector por atributo va entre []*/
+[atributo="miatributo"]:hover{
+	/*font-size: 50px;*/
+	color:green;
+	font-family: sans-serif;
+}
+
+h2{
+	color: green;
+}
+
+h2{
+	color:green;
+}
+/*Entra a la etiqueta padre para darle estilo a los hijos*/
+h2 span{
+	color: red;
+}
+
+button:hover{
+	color:darkblue;
+	background-color: orange;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+div:hover{
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+/*selector{s
+	propiedad:valor;
+}*/
