@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    font-size: 25px;
+    color:#000000;
+}
+
+/* Para usar el multiucurso dejar oprimido la tecla alt y dar clic izquierdo en los elementos donde quieras poner el multicursor */
+.uno{
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+    /* Cuando es static el elemento no esta posicionado */
+    position:static;
+}
+
+.dos{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    position:relative;
+    z-index:3000;
+}
+
+.tres{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    bottom:100px;
+    left: 200px;
+    z-index: 5000;
+}
+
+.cuatro{
+    background-color: orange;
+    min-width: 1024px;
+    height: 150px;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.cinco{
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+    position: sticky;
+    bottom: 300px;
+    z-index: 4000;
+}
