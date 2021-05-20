@@ -1,0 +1,48 @@
+img{
+    width: 300px;
+    height: 250px;
+    /* visbility esconde el elemento pero se conserva su espacio*/
+    visibility: visible;
+    /* display:none desaparece el elemento pero los demas ocupan su espacio */
+    /* display: none; */
+    transform: rotate(25deg);
+
+
+    /* transition-property: width;
+    transition-duration: 0.5s; */
+    transition-delay: 1s;
+
+    /* transition: width 0.5s;
+    transition: height 0.8s; */
+
+    transition: width 0.5s, height 0.5s,transform 0.5s, filter 0.5s;
+    transition: all 0.5s;
+
+    /* filter: blur(1px); */
+    /* filter: contrast(20%); */
+    /* filter: saturate(5); */
+    /* filter: drop-shadow(8px 8px 8px red); */
+    /* filter: grayscale(100%); */
+    /* filter: hue-rotate(180deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(30%); */
+}
+
+img:hover{
+    width: 350px;
+    height: 200px;
+    transform: rotateX(0deg);
+    filter: brightness(130%) sepia(100%) drop-shadow(8px 8px 8px red);
+}
+
+h1{
+    visibility: visible;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+}
+
+p img{
+    float: left;
+}
