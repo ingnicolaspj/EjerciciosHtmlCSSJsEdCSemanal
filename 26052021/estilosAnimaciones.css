@@ -1,0 +1,76 @@
+#contenedor{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orange;
+
+    /* animation-name: mi-animacion;
+    animation-duration: 3s;
+    animation-iteration-count:infinite; */
+    /* animation: mi-animacion 3s infinite ease-out; */
+}
+
+#contenedor2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* animation: rotate 3s ease-in infinite, mi-animacion 2s ease-in-out infinite; */
+}
+
+h1{
+    animation: title-animation 6s infinite ease-out;
+    
+    animation-direction: alternate-reverse;
+}
+
+@keyframes title-animation {
+
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    60%{
+        font-size: 5rem;
+        color: red;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes rotate{
+
+    from{
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@keyframes mi-animacion {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(calc(100vw - 200px)) scale(0.5);
+        background-color: green;
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+    /* from{
+        background-color: orange;
+    }
+
+    to{
+        width: 250px;
+        height: 250px;
+        background-color: green;
+    } */
+}
+
+
